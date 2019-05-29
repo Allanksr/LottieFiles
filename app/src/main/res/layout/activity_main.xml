@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityLottie">
+
+    <RelativeLayout
+        android:id="@+id/containerLottie"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/LottieAnimationViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="signalicon.json"
+            app:lottie_repeatCount="100" />
+
+        <View
+            android:id="@+id/bg_black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toStartOf="@+id/bg_white"
+            android:layout_toLeftOf="@+id/bg_white"
+            android:background="@android:color/black"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <View
+            android:id="@+id/bg_white"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/background_light"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/containerLottie"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/fromurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fromhere"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/fromurl" />
+
+        <Button
+            android:id="@+id/fromhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edturl"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fromhere" />
+
+        <Button
+            android:id="@+id/dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dialog" />
+
+        <EditText
+            android:id="@+id/edturl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/lottieurl"
+            android:inputType="textPersonName"
+            tools:text="@string/lottieurl" />
+
+        <Button
+            android:id="@+id/myurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/myurl" />
+
+        <ImageView
+            android:id="@+id/clearfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edturl"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginLeft="181dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="Clear field"
+            app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/myspace"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieCom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="data.json"
+            app:lottie_repeatCount="10" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="border_yellow.json"
+            app:lottie_repeatCount="100" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

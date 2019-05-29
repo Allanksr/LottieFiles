@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LottieUrl</string>
+    <string name="myurl">My Url</string>
+    <string name="fromurl">From Url</string>
+    <string name="fromhere">From Internal</string>
+    <string name="dialog">Dialog test</string>
+    <string name="lottieurl">https://assets5.lottiefiles.com/packages/lf20_Rtv8nL.json</string>
+</resources>
