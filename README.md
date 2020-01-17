@@ -1,6 +1,6 @@
 # LottieFiles
 
- Implementation of lottie url / android animations.
+ Implementation of lottie url / android animations!
 
 Lottie 2.8.0 and above only supports projects that have been migrated to <a href="https://developer.android.com/jetpack/androidx/">androidx</a>. 
 
